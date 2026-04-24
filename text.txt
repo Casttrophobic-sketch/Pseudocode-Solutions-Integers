@@ -1,0 +1,16 @@
+# integer_sign_checker.py
+
+def determine_number_sign():
+    try:
+        number = int(input("Enter an integer: "))
+        if number == 0:
+            print("The number is zero.")
+        elif number > 0:
+            print("The number is positive.")
+        else:
+            print("The number is negative.")
+    except ValueError:
+        print("Invalid input. Please enter a valid integer.")
+
+if __name__ == "__main__":
+    determine_number_sign()
